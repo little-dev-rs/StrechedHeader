@@ -6,7 +6,7 @@
 import UIKit
 
 final class StretchyTableHeaderView: UIView {
-    
+
     public let imageView: UIImageView = {
         let imageView = UIImageView()
         return imageView
@@ -39,7 +39,7 @@ final class StretchyTableHeaderView: UIView {
         NSLayoutConstraint.activate([
             widthAnchor.constraint(equalTo: containerView.widthAnchor),
             centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-            heightAnchor.constraint(equalTo: containerView.heightAnchor)
+            heightAnchor.constraint(equalToConstant: 270 - safeAreaTopInset)
         ])
         
         containerView.widthAnchor.constraint(equalTo: imageView.widthAnchor).isActive = true
@@ -58,9 +58,15 @@ final class StretchyTableHeaderView: UIView {
         containerView.clipsToBounds = offsetY <= 0
         imageViewBottomConstraint.constant = offsetY >= 0 ? 0 : -offsetY / 2
         imageViewHeightConstraint.constant = max(offsetY + scrollView.contentInset.top, scrollView.contentInset.top)
-        
-        
-        scrollView.verticalScrollIndicatorInsets.top = imageView.bounds.height // ??
+        scrollView.verticalScrollIndicatorInsets.top = imageView.frame.height - safeAreaTopInset
     }
     
+}
+
+extension UIView {
+    
+    var safeAreaTopInset: CGFloat {
+        UIApplication.shared.windows[0].safeAreaInsets.top
+    }
+
 }
