@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  StrechedHeader
 //
-//  Created by Svetlana Shardakova on 20.05.2023.
-//
 
 import UIKit
 

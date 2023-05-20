@@ -13,6 +13,7 @@
 		70F3ABE22A1911B0006568AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F3ABE02A1911B0006568AA /* Main.storyboard */; };
 		70F3ABE42A1911B0006568AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F3ABE32A1911B0006568AA /* Assets.xcassets */; };
 		70F3ABE72A1911B0006568AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F3ABE52A1911B0006568AA /* LaunchScreen.storyboard */; };
+		70F3ABEF2A1914F7006568AA /* StretchyTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3ABEE2A1914F7006568AA /* StretchyTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		70F3ABE32A1911B0006568AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70F3ABE62A1911B0006568AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70F3ABE82A1911B0006568AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F3ABEE2A1914F7006568AA /* StretchyTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				70F3ABDA2A1911B0006568AA /* AppDelegate.swift */,
 				70F3ABDC2A1911B0006568AA /* SceneDelegate.swift */,
 				70F3ABDE2A1911B0006568AA /* ViewController.swift */,
+				70F3ABEE2A1914F7006568AA /* StretchyTableHeaderView.swift */,
 				70F3ABE02A1911B0006568AA /* Main.storyboard */,
 				70F3ABE32A1911B0006568AA /* Assets.xcassets */,
 				70F3ABE52A1911B0006568AA /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F3ABDF2A1911B0006568AA /* ViewController.swift in Sources */,
+				70F3ABEF2A1914F7006568AA /* StretchyTableHeaderView.swift in Sources */,
 				70F3ABDB2A1911B0006568AA /* AppDelegate.swift in Sources */,
 				70F3ABDD2A1911B0006568AA /* SceneDelegate.swift in Sources */,
 			);
